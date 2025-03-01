@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link';
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -188,9 +189,9 @@ export default function Example() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
+              <Link key={item.name} href={item.href} className="text-sm font-semibold leading-6 text-gray-900">
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -257,7 +258,7 @@ export default function Example() {
           <div className="mx-auto max-w-7xl px-6 py-32 sm:py-40 lg:px-8">
             <div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
               <h1 className="max-w-2xl text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:col-span-2 xl:col-auto">
-                We’re a passionate group of people working from around the world to build the future of ecommerce.
+                We're a passionate group of people working from around the world to build the future of ecommerce.
               </h1>
               <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
                 <p className="text-lg leading-8 text-gray-600">
@@ -436,7 +437,7 @@ export default function Example() {
               <p className="flex-none text-3xl font-bold tracking-tight text-white">$8.9 billion</p>
               <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
                 <p className="text-lg font-semibold tracking-tight text-white">
-                  We’re proud that our customers have made over $8 billion in total revenue.
+                  We're proud that our customers have made over $8 billion in total revenue.
                 </p>
                 <p className="mt-2 text-base leading-7 text-gray-400">
                   Eu duis porta aliquam ornare. Elementum eget magna egestas.
@@ -460,7 +461,7 @@ export default function Example() {
           <div className="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
             <div className="w-full lg:max-w-lg lg:flex-auto">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                We’re always looking for awesome people to join us
+                We're always looking for awesome people to join us
               </h2>
               <p className="mt-6 text-xl leading-8 text-gray-600">
                 Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est euismod lacus. Est non placerat nam arcu.
@@ -480,10 +481,10 @@ export default function Example() {
                     <dl className="relative flex flex-wrap gap-x-3">
                       <dt className="sr-only">Role</dt>
                       <dd className="w-full flex-none text-lg font-semibold tracking-tight text-gray-900">
-                        <a href={opening.href}>
+                        <Link href={opening.href}>
                           {opening.role}
                           <span aria-hidden="true" className="absolute inset-0" />
-                        </a>
+                        </Link>
                       </dd>
                       <dt className="sr-only">Description</dt>
                       <dd className="mt-2 w-full flex-none text-base leading-7 text-gray-600">{opening.description}</dd>
@@ -501,9 +502,9 @@ export default function Example() {
                 ))}
               </ul>
               <div className="mt-8 flex border-t border-gray-100 pt-8">
-                <a href="#" className="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+                <Link href="#" className="text-sm font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
                   View all openings <span aria-hidden="true">&rarr;</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -524,9 +525,9 @@ export default function Example() {
                   <ul role="list" className="mt-6 space-y-4">
                     {footerNavigation.solutions.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                        <Link href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -536,9 +537,9 @@ export default function Example() {
                   <ul role="list" className="mt-6 space-y-4">
                     {footerNavigation.support.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                        <Link href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -550,9 +551,9 @@ export default function Example() {
                   <ul role="list" className="mt-6 space-y-4">
                     {footerNavigation.company.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                        <Link href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -562,9 +563,9 @@ export default function Example() {
                   <ul role="list" className="mt-6 space-y-4">
                     {footerNavigation.legal.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                        <Link href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
                           {item.name}
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
