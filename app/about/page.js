@@ -437,7 +437,7 @@ export default function Example() {
               <p className="flex-none text-3xl font-bold tracking-tight text-white">$8.9 billion</p>
               <div className="sm:w-80 sm:shrink lg:w-auto lg:flex-none">
                 <p className="text-lg font-semibold tracking-tight text-white">
-                  We're proud that our customers have made over $8 billion in total revenue.
+                  We&apos;re proud that our customers have made over $8 billion in total revenue.
                 </p>
                 <p className="mt-2 text-base leading-7 text-gray-400">
                   Eu duis porta aliquam ornare. Elementum eget magna egestas.
@@ -461,7 +461,7 @@ export default function Example() {
           <div className="mx-auto flex max-w-2xl flex-col items-end justify-between gap-16 lg:mx-0 lg:max-w-none lg:flex-row">
             <div className="w-full lg:max-w-lg lg:flex-auto">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                We're always looking for awesome people to join us
+                We&apos;re always looking for awesome people to join us
               </h2>
               <p className="mt-6 text-xl leading-8 text-gray-600">
                 Diam nunc lacus lacus aliquam turpis enim. Eget hac velit est euismod lacus. Est non placerat nam arcu.
